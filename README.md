@@ -1,4 +1,4 @@
-# [WIP] Tiny JSON Stringify (`14kb`)
+# [WIP] Tiny JSON Stringify (`7.5kb`)
 
 ## Why?
 
@@ -20,25 +20,37 @@ go get github.com/kvendrik/stringify
 ```go
 package main
 
-import "fmt"
-import "github.com/kvendrik/stringify"
+import (
+	"fmt"
+
+	"github.com/kvendrik/stringify"
+)
 
 func main() {
-  fmt.Println(stringify.Stringify(map[string]interface{}{
-    "name": "John Doe",
-    "age": 26,
-    "data": map[string]interface{}{
-      "city": "New York",
-      "state": "NY",
-    },
-  }))
+	fmt.Println(stringify.Interface(map[string]interface{}{
+		"name": "John Doe",
+		"age":  26,
+		"data": map[string]interface{}{
+			"city":  "New York",
+			"state": "NY",
+		},
+		"list": []interface{}{23, "NY", 25},
+	}))
+
+  fmt.Println(stringify.Array([]interface{}{23, "NY", 25}))
 }
 ```
 
 Yields
 
 ```json
-{ "name": "John Doe", "age": 26, "data": { "city": "New York", "state": "NY" } }
+{
+  "name": "John Doe",
+  "age": 26,
+  "data": { "city": "New York", "state": "NY" },
+  "list": [23, "NY", 25]
+}
+[23, "NY", 25]
 ```
 
 ## Running the demo
