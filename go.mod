@@ -1,1 +1,1 @@
-package github.com/kvendrik/stringify
+module github.com/kvendrik/stringify
