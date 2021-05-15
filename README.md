@@ -64,5 +64,6 @@ make run_demo
 - [x] Support strings
 - [x] Support interfaces
 - [x] Support nested interfaces
-- [ ] Support numbers
-- [ ] Support arrays
+- [x] Support numbers
+- [x] Support arrays
+- [ ] Support floats
