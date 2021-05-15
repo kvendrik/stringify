@@ -1,5 +1,7 @@
 # [WIP] Tiny JSON Stringify (`7.5kb`)
 
+**Tiny JSON Stringify library for Go. Built to have a way to stringify interfaces in WebAssembly applications (it's `.wasm` file is `7.5kb`).**
+
 ## Why?
 
 When building applications that use Go and WebAssembly I often want to be able to send complicated results back to the client.
