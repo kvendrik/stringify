@@ -11,7 +11,11 @@ There's two problems that occur when trying to do this:
 
 This package aims to solve problem number 2 in the most lightweight way possible (no imported libraries).
 
-## Example
+## Usage
+
+```
+go get github.com/kvendrik/stringify
+```
 
 ```go
 package main
