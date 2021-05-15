@@ -11,7 +11,11 @@ There's two problems that occur when trying to do this:
 
 This package aims to solve problem number 2 in the most lightweight way possible (no imported libraries).
 
-## Example
+## Usage
+
+```bash
+go get github.com/kvendrik/stringify
+```
 
 ```go
 package main
@@ -35,6 +39,12 @@ Yields
 
 ```json
 { "name": "John Doe", "age": 26, "data": { "city": "New York", "state": "NY" } }
+```
+
+## Running the demo
+
+```
+make run_demo
 ```
 
 ## Progress
