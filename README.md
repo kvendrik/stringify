@@ -1,4 +1,4 @@
-# [WIP] Tiny JSON Stringify
+# [WIP] Tiny JSON Stringify (`14kb`)
 
 ## Why?
 
